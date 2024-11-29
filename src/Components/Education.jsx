@@ -3,18 +3,19 @@ import "../index.css";
 import "animate.css/animate.compat.css"
 import ScrollAnimation from 'react-animate-on-scroll';
 const Colleges = [
-  {
-    title: "Amrita Vishwa Vidhyapeetham",
-    description: "Bachelor of Technology in Computer Science",
-    link: "https://www.amrita.edu/campus/bengaluru/",
-    imageUrl: "https://amritatec.in/images/university.jpg"
-  },
+ 
   {
     title: "Oregon State University",
     description: "Master of Engineering in Computer Science",
     link: "https://engineering.oregonstate.edu/EECS",
     imageUrl: "https://wallpapercave.com/wp/wp3724674.jpg" 
   },
+  {
+    title: "Amrita Vishwa Vidhyapeetham",
+    description: "Bachelor of Technology in Computer Science",
+    link: "https://www.amrita.edu/campus/bengaluru/",
+    imageUrl: "https://amritatec.in/images/university.jpg"
+  }
 ];
 
 function Education() {
@@ -25,7 +26,7 @@ function Education() {
     <ScrollAnimation animateIn="bounceInLeft">
       <h2 className="projects-heading">Academics</h2>
     </ScrollAnimation>
-    <ScrollAnimation animateIn="fadeIn">
+    <ScrollAnimation animateIn="bounceInRight">
       <div className="Academic-grid-container">
         {Colleges.map((college, index) => (
           <div

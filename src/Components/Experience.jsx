@@ -5,17 +5,15 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Companies = [
   {
     title: "Tata Consultancy Services",
-    description: "Engaged in a User Experience(UX) TV application project associated with Comcast.The application is made with a Javascript framework (LightningJS).",
-    description1 : "Created a testing application named MIDAS that uses React JS and Express JS. The application is used for testing various TV applications.",
+    description: "UI developer",
     link: "https://www.amrita.edu/campus/bengaluru/",
-    imageUrl: "https://logodix.com/logo/733212.png"
+    imageUrl: "https://resources.ripplematch.com/hubfs/Tata%20Consultancy%20Services-1.png"
   },
   {
     title: "10X Academy",
-    description: "Interacted with students regarding the classes for UI Development and Data Structures. Evaluated their understanding and assigned web development and machine learning projects.",
-    description1 : "Led a team to review the performance of students and analyze the weaknesses of a particular student.",
+    description: "Academic Mentor",
     link: "https://engineering.oregonstate.edu/EECS",
-    imageUrl: "https://wallpapercave.com/wp/wp3724674.jpg" 
+    imageUrl: "https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/10x_academy/original.png?1622233879" 
   },
 ];
 
@@ -27,13 +25,13 @@ function Experience() {
     <ScrollAnimation animateIn="bounceInLeft">
       <h2 className="projects-heading">Experience</h2>
     </ScrollAnimation>
-    <ScrollAnimation animateIn="fadeIn">
+    <ScrollAnimation animateIn="bounceInRight">
       <div className="Experience-grid-container">
         {Companies.map((company, index) => (
           <div
             key={index}
             className="grid-item"
-            style={{ backgroundColor : "white" }} 
+            style={{ backgroundImage: `url(${company.imageUrl})`  }} 
           >
             <div className="overlay" >
               <h2>{company.title}</h2>

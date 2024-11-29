@@ -119,7 +119,7 @@ function Skills() {
     <ScrollAnimation animateIn="bounceInLeft">
       <h2 className="projects-heading">Skills</h2>
     </ScrollAnimation>
-    <ScrollAnimation animateIn="fadeIn">
+    <ScrollAnimation animateIn="bounceInRight">
       <div className="skills-grid-container">
         {skills.map((skill, index) => (
           <div

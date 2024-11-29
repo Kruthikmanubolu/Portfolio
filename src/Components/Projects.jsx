@@ -49,7 +49,7 @@ function Projects() {
     <ScrollAnimation animateIn="bounceInLeft">
       <h2 className="projects-heading">Projects</h2>
     </ScrollAnimation>
-    <ScrollAnimation animateIn="fadeIn">
+    <ScrollAnimation animateIn="bounceInRight">
       <div className="grid-container">
         {projects.map((project, index) => (
           <div
