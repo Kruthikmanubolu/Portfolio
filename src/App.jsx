@@ -8,10 +8,11 @@ import Footer from './Components/Footer';
 import Education from './Components/Education';
 import Experience from './Components/Experience';
 import Skills from './Components/Skills';
-
+import Particle from './Components/ParticleComponent';
 const App = () => {
   return (
     <div>
+      <Particle/>
       <Hero />
       <Navbar />
       <About />

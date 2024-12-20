@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Hero = () => {
   return (
     <section id="home" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">

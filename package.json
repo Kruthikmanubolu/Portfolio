@@ -16,14 +16,19 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@tsparticles/react": "^3.0.0",
     "animate.css": "^4.1.1",
     "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.3.1",
+    "react-particle-js": "^1.0.1",
     "react-scroll": "^1.9.0",
+    "react-tsparticles": "^2.12.2",
     "swipe": "^1.7.7",
-    "swiper": "^11.1.15"
+    "swiper": "^11.1.15",
+    "tsparticles": "^3.7.1",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

@@ -135,9 +135,6 @@ function Skills() {
                   style={{ width: `${skill.level}%` }}
                 ></div>
               </div>
-              <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                Want to learn?
-              </a>
             </div>
           </div>
         ))}
