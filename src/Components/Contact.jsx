@@ -1,5 +1,5 @@
 import React from 'react';
-import gmailIcon from '../assets/gmail.svg'; 
+import gmailIcon from '../assets/Final_Gmail.png'; 
 import linkedinIcon from '../assets/LinkedIn_icon.svg.png';
 import githubIcon from '../assets/Octicons-mark-github.svg.png'
 import instaIcon from '../assets/Instagram_logo_2022.svg.png'
@@ -10,9 +10,9 @@ const Contact = () => {
     
     <section id="contact" className="py-20 bg-gray-100">
       <div className="container mx-auto text-center">
-      <ScrollAnimation animateIn='bounceInLeft'>
+      {/* <ScrollAnimation animateIn='bounceInLeft'> */}
         <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
-      </ScrollAnimation>
+      {/* </ScrollAnimation> */}
       <ScrollAnimation animateIn='fadeIn'>
         <p className="mb-6">I'd love to hear from you! Feel free to reach out to me.</p>
       </ScrollAnimation>

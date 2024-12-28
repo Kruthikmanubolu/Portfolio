@@ -22,9 +22,9 @@ function Experience() {
     
     <section id="experience" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
     <div className="projects-container">
-    <ScrollAnimation animateIn="bounceInLeft">
+    {/* <ScrollAnimation animateIn="bounceInLeft"> */}
       <h2 className="projects-heading">Experience</h2>
-    </ScrollAnimation>
+    {/* </ScrollAnimation> */}
     <ScrollAnimation animateIn="bounceInRight">
       <div className="Experience-grid-container">
         {Companies.map((company, index) => (

@@ -116,13 +116,13 @@ function Skills() {
     
     <section id="skills" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
     <div className="projects-container">
-    <ScrollAnimation animateIn="bounceInLeft">
+    {/* <ScrollAnimation animateIn="bounceInLeft"> */}
       <h2 className="projects-heading">Skills</h2>
-    </ScrollAnimation>
+    {/* </ScrollAnimation> */}
     <ScrollAnimation animateIn="bounceInRight">
       <div className="skills-grid-container">
         {skills.map((skill, index) => (
-          <div
+          <a href={skill.link}><div
             key={index}
             className="grid-item"
             style={{ backgroundImage: `url(${skill.imageUrl})` }}
@@ -137,6 +137,7 @@ function Skills() {
               </div>
             </div>
           </div>
+          </a>
         ))}
       </div>
       </ScrollAnimation>

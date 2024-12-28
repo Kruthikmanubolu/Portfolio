@@ -46,13 +46,13 @@ function Projects() {
     
     <section id="projects" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
     <div className="projects-container">
-    <ScrollAnimation animateIn="bounceInLeft">
-      <h2 className="projects-heading">Projects</h2>
-    </ScrollAnimation>
+    {/* <ScrollAnimation animateIn="bounceInLeft"> */}
+      <h2 className="projects-heading-actual">Projects</h2>
+    {/* </ScrollAnimation> */}
     <ScrollAnimation animateIn="bounceInRight">
       <div className="grid-container">
         {projects.map((project, index) => (
-          <div
+          <a href={project.link}><div
             key={index}
             className="grid-item"
             style={{ backgroundImage: `url(${project.imageUrl})` }} 
@@ -60,11 +60,8 @@ function Projects() {
             <div className="overlay">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                Learn More →
-              </a>
             </div>
-          </div>
+          </div></a>
         ))}
       </div>
       </ScrollAnimation>

@@ -23,9 +23,9 @@ function Education() {
     
     <section id="Education" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
     <div className="projects-container">
-    <ScrollAnimation animateIn="bounceInLeft">
-      <h2 className="projects-heading">Academics</h2>
-    </ScrollAnimation>
+    {/* <ScrollAnimation animateIn="bounceInLeft"> */}
+      <h2 className="Academics-heading">Academics</h2>
+    {/* </ScrollAnimation> */}
     <ScrollAnimation animateIn="bounceInRight">
       <div className="Academic-grid-container">
         {Colleges.map((college, index) => (
