@@ -21,6 +21,7 @@
     "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-animate-on-scroll": "^2.1.9",
+    "react-card-flip": "^1.2.3",
     "react-dom": "^18.3.1",
     "react-particle-js": "^1.0.1",
     "react-scroll": "^1.9.0",

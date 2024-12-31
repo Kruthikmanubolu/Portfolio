@@ -2,6 +2,8 @@ import React from "react";
 import "../index.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css"
+import ReactCardFlip from "react-card-flip";
+
 const projects = [
   {
     title: "Computer Graphics (OpenGL)",
@@ -16,7 +18,7 @@ const projects = [
     imageUrl: "https://theanalyst.com/wp-content/uploads/2021/08/does-a-penalty-shootout-victory-count-as-a-win-scaled.jpg" 
   },
   {
-    title: "Drowsiness Detection",
+    title: "Drowsy Eye Detection",
     description: "A real-time drowsiness detection system using OpenCV with a live video feed.",
     link: "https://github.com/Kruthikmanubolu/DrowsyEye-Detection",
     imageUrl: "https://caradas.com/wp-content/uploads/2022/03/Understanding-ADAS-Driver-Attention-Warning-Drowsiness-Detection-1-1024x683.jpeg" 
@@ -42,6 +44,8 @@ const projects = [
 ];
 
 function Projects() {
+
+  
   return (
     
     <section id="projects" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
