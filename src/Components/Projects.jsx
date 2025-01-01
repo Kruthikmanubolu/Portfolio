@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import "../index.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css"
@@ -44,7 +44,13 @@ const projects = [
 ];
 
 function Projects() {
+  const [flipped, setFlipped] = useState(Array(projects.length).fill(false));
 
+  const handleFlip = (index) => {
+    const newFlipped = [...flipped];
+    newFlipped[index] = !newFlipped[index];
+    setFlipped(newFlipped);
+  };
   
   return (
     
@@ -56,18 +62,25 @@ function Projects() {
     <ScrollAnimation animateIn="bounceInRight">
       <div className="grid-container">
         {projects.map((project, index) => (
-          <a href={project.link}><div
+          <ReactCardFlip
+          isFlipped={flipped[index]}
+          flipDirection="horizontal"
+          key={index}>
+          <div onClick={() => handleFlip(index)}
             key={index}
             className="grid-item"
             style={{ backgroundImage: `url(${project.imageUrl})` }} 
-          >
-            <div className="overlay">
-              <h3>{project.title}</h3>
+          ><h3 className="overlay">{project.title}</h3></div>
+            <div onClick={() => handleFlip(index)} className="overlay">
               <p>{project.description}</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <button className="view-project-button">View Project</button>
+      </a>
             </div>
-          </div></a>
+          </ReactCardFlip>
         ))}
       </div>
+      
       </ScrollAnimation>
     </div>
     </section>
