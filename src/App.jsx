@@ -31,9 +31,7 @@ const App = () => {
     };
   }, []);
 
-  return isMobileView ? (
-    <Hero_Mobile />
-  ) : (
+  return (
     <div>
       <Particle />
       <Hero />

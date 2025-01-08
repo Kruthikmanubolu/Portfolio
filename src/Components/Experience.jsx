@@ -6,7 +6,7 @@ import ReactCardFlip from "react-card-flip";
 const Companies = [
   {
     title: "Tata Consultancy Services",
-    description: "UI developer",
+    description: "Assistant Systems Engineer",
     description1: "Engaged in a User Experience(UX) TV application project associated with Comcast. The application is made with a Javascript framework (LightningJS). Created a testing application named MIDAS that uses React JS and Express JS. The application is used for testing various TV applications.",
     link: "https://www.amrita.edu/campus/bengaluru/",
     imageUrl: "https://resources.ripplematch.com/hubfs/Tata%20Consultancy%20Services-1.png"
