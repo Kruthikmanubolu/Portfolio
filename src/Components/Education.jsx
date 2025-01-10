@@ -8,13 +8,15 @@ const Colleges = [
     title: "Oregon State University",
     description: "Master of Engineering in Computer Science",
     link: "https://engineering.oregonstate.edu/EECS",
-    imageUrl: "https://wallpapercave.com/wp/wp3724674.jpg" 
+    imageUrl: "https://wallpapercave.com/wp/wp3724674.jpg", 
+    gpa: "GPA - 3.91"
   },
   {
     title: "Amrita Vishwa Vidhyapeetham",
     description: "Bachelor of Technology in Computer Science",
     link: "https://www.amrita.edu/campus/bengaluru/",
-    imageUrl: "https://amritatec.in/images/university.jpg"
+    imageUrl: "https://amritatec.in/images/university.jpg",
+    gpa: "CGPA - 7.26"
   }
 ];
 
@@ -29,7 +31,7 @@ function Education() {
     <ScrollAnimation animateIn="bounceInRight">
       <div className="Academic-grid-container">
         {Colleges.map((college, index) => (
-          <div
+        <a href={college.link}><div
             key={index}
             className="grid-item"
             style={{ backgroundImage: `url(${college.imageUrl})` }} 
@@ -37,11 +39,9 @@ function Education() {
             <div className="overlay" >
               <h3>{college.title}</h3>
               <p>{college.description}</p>
-              <a href={college.link} target="_blank" rel="noopener noreferrer">
-                Visit College Website →
-              </a>
+              <p>{college.gpa}</p>
             </div>
-          </div>
+          </div></a>
         ))}
       </div>
       </ScrollAnimation>
