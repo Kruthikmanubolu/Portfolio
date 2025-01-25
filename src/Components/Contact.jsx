@@ -4,6 +4,7 @@ import linkedinIcon from '../assets/LinkedIn_icon.svg.png';
 import githubIcon from '../assets/Octicons-mark-github.svg.png';
 import instaIcon from '../assets/Instagram_logo_2022.svg.png';
 import resumeFile from '../assets/Resume.pdf'; // Add your resume file path here
+import newResume from '../assets/Lakshman Kruthik_Resume.pdf'
 import "animate.css/animate.compat.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -63,7 +64,7 @@ const Contact = () => {
         <ScrollAnimation animateIn="fadeInUp">
           <div className="mt-8">
             <a
-              href={resumeFile}
+              href={newResume}
               download="Kruthik_Lakshman_Resume.pdf"
               className="inline-block px-6 py-3 text-white bg-blue-500 rounded-lg font-bold hover:bg-blue-600 transition duration-300"
             >
