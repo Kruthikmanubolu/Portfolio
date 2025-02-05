@@ -7,7 +7,7 @@ const Navbar = () => {
     <ScrollAnimation animateIn='fadeIn'>
     <nav className="bg-gray-800 text-white py-4 ">
       <div className="container mx-auto flex justify-between items-center">
-        <ul className="flex space-x-4">
+        <ul className="flex gap-x-12">
           <li><a href="#home" smooth = {true} duration = {500} offset = {-50} className="hover:text-blue-400">Home</a></li>
           <li><a href="#about" smooth = {true} duration = {500} offset = {-50} className="hover:text-blue-400">About</a></li>
           <li><a href="#projects" smooth = {true} duration = {500} offset = {-50} className="hover:text-blue-400">Projects</a></li>

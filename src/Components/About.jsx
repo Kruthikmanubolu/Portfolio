@@ -2,6 +2,7 @@ import React from 'react';
 import picture from '../assets/groom-83.jpg'
 import "animate.css/animate.compat.css"
 import ScrollAnimation from 'react-animate-on-scroll';
+import '../index.css'
 const About = () => {
   return (
     

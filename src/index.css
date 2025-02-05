@@ -35,9 +35,10 @@ nav h1 {
 }
 
 nav ul {
+  justify-content: center;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 nav ul li a {
@@ -199,75 +200,28 @@ footer p {
   margin: 0;
 }
 
+.gradient-background{
+  background : linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 
-@media (max-width: 768px) {
-  #nav{
-    position: sticky;
+}
+@keyframes gradient-animation {
+  0%{
+    background-position: 0% 50%;
   }
-  nav ul {
-    flex-direction: row;
-    gap: 0.75rem;
-    font-size: 9px;
-    text-align: left; /* Align text and content to the left */
-    margin-left: 0;  /* Remove any default margin on the left */
-    padding-left: 0; /* Remove padding if the list is indented */
-    list-style: none;
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 
-
-  section#home h1 {
-    font-size: 2rem;
-  }
-
-  section#home p {
-    font-size: 0.75rem;
-  }
-
-  section#about h2, section#projects h2, section#contact h2 {
-    font-size: 1.75rem;
-  }
-  section#about p{
-    font-size: 0.75rem;
-    justify-content: space-evenly;
-  }
-  .grid-item{
-    height: 200px;
-    width: 200px;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for responsiveness */
-    gap: 20px; /* Space between grid items */
-    width: 90%; /* Add padding around the grid */
-    margin: auto;
-  }
-
-  .overlay h3{
-    font-size: 10px;
-  }
-  .overlay p{
-    font-size: 10px;
-  }
-
-  .overlay {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
-    color: white;
-    width: 100%;
-    height: 250px;
-    padding: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 9px;
-  }
   
   
 
-}
+
 img {
   width: 25px;
   height: 25px;
@@ -598,6 +552,7 @@ img {
   font-size: 0.9rem;
   margin-top: 5px;
 }
+
 
 
 

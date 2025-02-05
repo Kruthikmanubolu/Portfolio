@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import '../index.css'
 const Hero = () => {
   
 
@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <section
       id="home"
-      className="relative bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20"
+      className="relative gradient-background text-white py-20"
     >
       <div className="container mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold animate-fadeIn">
