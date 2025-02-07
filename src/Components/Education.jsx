@@ -31,7 +31,7 @@ function Education() {
     <ScrollAnimation animateIn="bounceInRight">
       <div className="Academic-grid-container">
         {Colleges.map((college, index) => (
-        <a href={college.link}><div
+        <div
             key={index}
             className="grid-item"
             style={{ backgroundImage: `url(${college.imageUrl})` }} 
@@ -41,7 +41,7 @@ function Education() {
               <p>{college.description}</p>
               <p>{college.gpa}</p>
             </div>
-          </div></a>
+          </div>
         ))}
       </div>
       </ScrollAnimation>

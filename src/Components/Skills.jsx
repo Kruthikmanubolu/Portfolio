@@ -7,7 +7,7 @@ const skills = [
     title: "C",
     //description: "Bachelor of Technology in Computer Science",
     link: "https://en.wikipedia.org/wiki/C_(programming_language)",
-    imageUrl: "https://www.pngitem.com/pimgs/m/31-312155_c-programming-language-logo-hd-png-download.png",
+    imageUrl: "https://static.skillshare.com/uploads/video/thumbnails/b9455fc40a4053509ef0a77b8ddb6a51/original",
     level : 80
   },
   {

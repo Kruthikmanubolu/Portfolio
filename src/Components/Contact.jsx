@@ -29,7 +29,7 @@ const Contact = () => {
               <img
                 src={gmailIcon}
                 alt="Gmail"
-                style={{ width: '60px', height: '60px', marginRight: '20px' }}
+                style={{ width: '50px', height: '50px', marginRight: '20px' }}
                 className="hover:opacity-50"
               />
             </a>
@@ -37,7 +37,7 @@ const Contact = () => {
               <img
                 src={linkedinIcon}
                 alt="LinkedIn"
-                style={{ width: '60px', height: '60px' , marginRight : '20px'}}
+                style={{ width: '50px', height: '50px' , marginRight : '20px'}}
                 className="hover:opacity-50"
               />
             </a>
@@ -45,7 +45,7 @@ const Contact = () => {
               <img
                 src={githubIcon}
                 alt="GitHub"
-                style={{ width: '60px', height: '60px' , marginRight : '20px'}}
+                style={{ width: '50px', height: '50px' , marginRight : '20px'}}
                 className="hover:opacity-50"
               />
             </a>
@@ -53,7 +53,7 @@ const Contact = () => {
               <img
                 src={instaIcon}
                 alt="Instagram"
-                style={{ width: '60px', height: '60px', marginRight : '20px' }}
+                style={{ width: '50px', height: '50px', marginRight : '20px' }}
                 className="hover:opacity-50"
               />
             </a>
