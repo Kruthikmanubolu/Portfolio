@@ -27,7 +27,7 @@
     "react-card-flip": "^1.2.3",
     "react-dom": "^18.3.1",
     "react-particle-js": "^1.0.1",
-    "react-scroll": "^1.9.0",
+    "react-scroll": "^1.9.2",
     "react-tsparticles": "^2.12.2",
     "swipe": "^1.7.7",
     "swiper": "^11.1.15",
