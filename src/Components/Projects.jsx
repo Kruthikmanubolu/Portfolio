@@ -41,6 +41,12 @@ const projects = [
     link: "https://github.com/Kruthikmanubolu/Membership-Inference-Attack",
     imageUrl: "https://wallpapercave.com/wp/wp2691421.jpg" 
   },
+  {
+    title: "Expense-Tracker",
+    description: "A web application to track expenses",
+    link: "https://github.com/Kruthikmanubolu/Expense-Tracker-MERN-Stack",
+    imageUrl: "https://sp.yimg.com/ib/th?id=OADD2.7284286246775_1GYGPSM1G91UB9QCEW&pid=21.2&c=16&roil=0&roit=0&roir=1&roib=1&w=442&h=231" 
+  }
 ];
 
 function Projects() {
@@ -75,7 +81,16 @@ function Projects() {
               <p>{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
         <button className="view-project-button">View Project</button>
+        
       </a>
+      {project.title === "Expense-Tracker" && (
+        <a
+          href="https://expense-mern-stack-frontend.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="view-project-button">Live Demo</button>
+        </a>)}
             </div>
           </ReactCardFlip>
         ))}
