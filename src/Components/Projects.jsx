@@ -89,7 +89,7 @@ function Projects() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="view-project-button">Live Demo</button>
+          <button className="view-project-button">Visit Website</button>
         </a>)}
             </div>
           </ReactCardFlip>
