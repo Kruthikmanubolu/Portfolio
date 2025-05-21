@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <div>
-      <Particle />
+      <Particle></Particle>
       <Hero />
       <Navbar />
       <About />
