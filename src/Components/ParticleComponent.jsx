@@ -19,14 +19,21 @@ export default function Particle() {
   };
 
   return (
-    <>
+    <div
+  style={{
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100vw",
+    height: "100vh",
+    zIndex: 1,
+    pointerEvents: "none",
+  }}
+>
       {init && (
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
-          style={{
-            zIndex: 1,
-          }}
           options={{
             fpsLimit: 120,
             interactivity: {
@@ -93,6 +100,6 @@ export default function Particle() {
           }}
         />
       )}
-    </>
+      </div>
   );
 }
