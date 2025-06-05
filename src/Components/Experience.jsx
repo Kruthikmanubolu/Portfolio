@@ -3,7 +3,15 @@ import "../index.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css"
 import ReactCardFlip from "react-card-flip";
+import ternImage from '../assets/image.png';
 const Companies = [
+  {
+    title: "Tern Systems",
+    description: "Front End Developer",
+    description1: "Built scalable Next.js + TypeScript apps with optimized SEO and reusable Tailwind CSS components, speeding up development by 30%. Improved team workflows with clean Git/Jira practices and thorough code reviews, reducing merge conflicts by 40% and deployment issues by 25%.",
+    link: "https://engineering.oregonstate.edu/EECS",
+    imageUrl: ternImage 
+  },
   {
     title: "Tata Consultancy Services",
     description: "Application Developer",
