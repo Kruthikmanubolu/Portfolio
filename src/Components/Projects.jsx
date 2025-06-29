@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState} from "react";
 import "../index.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css"
 import ReactCardFlip from "react-card-flip";
 import image from '../assets/image.jpg'
+import bumblebee from '../assets/bumblebee-banner.jpg'
 
 const projects = [
   {
@@ -53,6 +54,12 @@ const projects = [
     description: "A full-stack web shopping platform offering seamless product browsing",
     link: "https://github.com/Kruthikmanubolu/Prostore",
     imageUrl: image
+  },
+  {
+    title: "BumbleBee (A career coach web application integrated with GenAI)",
+    description: "A full-stack web application incorporated with GenAI to get the career guidance",
+    link: "https://github.com/Kruthikmanubolu/Bumblebee-AI",
+    imageUrl: bumblebee
   }
 ];
 
@@ -101,6 +108,16 @@ function Projects() {
                   {project.title === "Shopeezy (E-Commerce web application)" && (
                     <a
                       href="https://prostore-nine-drab.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="view-project-button">Live Demo</button>
+                    </a>
+                  )}
+
+                  {project.title === "BumbleBee (A career coach web application integrated with GenAI)" && (
+                    <a
+                      href="https://bumblebee-ai.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
