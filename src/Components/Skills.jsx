@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-key */
 import React from "react";
 import "../index.css";
 import "animate.css/animate.compat.css"
@@ -91,7 +93,7 @@ const skills = [
     title: "Blender",
     //description: "Bachelor of Technology in Computer Science",
     link: "https://en.wikipedia.org/wiki/Blender_(software)",
-    imageUrl: "https://logocharts.com/wp-content/uploads/2021/12/Blender-Logo-1600x1308.png",
+    imageUrl: "https://logos-world.net/wp-content/uploads/2023/05/Blender-Symbol.png",
     level : 70
   },
   {
@@ -105,8 +107,24 @@ const skills = [
     title: "Bash",
     //description: "Bachelor of Technology in Computer Science",
     link: "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
-    imageUrl: "https://dwglogo.com/wp-content/uploads/2019/03/1800px-gnu_bash_logo-1024x705.png",
+    imageUrl: "https://dinahosting.com/blog/cont/uploads/2021/05/Que-es-Bash-Script.jpg",
     level : 50
+  },
+
+  {
+    title: "TypeScript",
+    //description: "Bachelor of Technology in Computer Science",
+    link: "https://www.typescriptlang.org/",
+    imageUrl: "https://picx.zhimg.com/v2-b197058832a60d2dbb9b5fa70d0e01f9_720w.jpg?source=172ae18b",
+    level : 70
+  },
+
+  {
+    title: "Next.js",
+    //description: "Bachelor of Technology in Computer Science",
+    link: "https://nextjs.org/",
+    imageUrl: "https://blog.openreplay.com/images/how-to-deploy-a-nextjs-app-to-production/images/hero.png",
+    level : 75
   },
 
 ];
